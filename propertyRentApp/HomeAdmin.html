@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Modern Business - Start Bootstrap Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="css/bootstrap-Combined.css" rel="stylesheet" />
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .span2 {
+            width: 14.52991452991453%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="MainLogin.html">Login</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+        <div id='content' class='row-fluid'>
+            <div class='span2 sidebar'>
+                <!-- <h3>Left Sidebar</h3>-->
+                <ul class="nav nav-tabs nav-stacked">
+                    <li><a href='javascript:void(0)' onclick="Search()">Search</a></li>
+                    <li><a href='javascript:void(0)' onclick="AgreeMent()">Users</a></li>
+                    <li><a href='javascript:void(0)' onclick="Repair()">Properties</a></li>
+
+                </ul>
+            </div>
+            <div class='span8 main' id="searchMain">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group" id="adv-search">
+                            <input type="text" class="form-control" sstyle="height: 31px;" placeholder="Search for snippets" />
+                            <div class="input-group-btn">
+                                <div class="btn-group" role="group">
+                                    <div class="dropdown dropdown-lg">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                        <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label for="filter">Filter by</label>
+                                                    <select class="form-control">
+                                                        <option value="0" selected>All Snippets</option>
+                                                        <option value="1">Featured</option>
+                                                        <option value="2">Most popular</option>
+                                                        <option value="3">Top rated</option>
+                                                        <option value="4">Most commented</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contain">Author</label>
+                                                    <input class="form-control" type="text" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contain">Contains the words</label>
+                                                    <input class="form-control" type="text" />
+                                                </div>
+                                                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-header">Property Panels</h2>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="panel panel-default text-center">
+                            <div class="panel-heading">
+                                <span class="fa-stack fa-5x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="panel-body">
+                                <h4>Property One</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="panel panel-default text-center">
+                            <div class="panel-heading">
+                                <span class="fa-stack fa-5x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="panel-body">
+                                <h4>Property Two</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="panel panel-default text-center">
+                            <div class="panel-heading">
+                                <span class="fa-stack fa-5x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-support fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="panel-body">
+                                <h4>Property Three</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="panel panel-default text-center">
+                            <div class="panel-heading">
+                                <span class="fa-stack fa-5x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="panel-body">
+                                <h4>Property Four</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class='span8 main hidden' id="DivAgreementForm">
+
+                <div class="table-responsive">
+
+                    <table id="mytable" class="table table-bordred table-striped">
+
+                        <thead>
+
+                        <th> <input type="checkbox" id="checkall" /></th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Joined Date</th>
+                        <th>Contact</th>
+                        <th>Edit</th>
+
+                        <th>Delete</th>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td><input type="checkbox" class="checkthis" /></td>
+                                <td>Name</td>
+                                <td>Tenant</td>
+                                <td>8-8-2017</td>
+                                <td>+923335586757</td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button></p></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" class="checkthis" /></td>
+                                <td>Name</td>
+                                <td>Owner</td>
+                                <td>8-8-2013</td>
+                                <td>+923335586757</td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button></p></td>
+                            </tr>
+
+
+
+
+
+
+                            <tr>
+                                <td><input type="checkbox" class="checkthis" /></td>
+                                <td>Name</td>
+                                <td>Agent</td>
+                                <td>8-8-2017</td>
+                                <td>+923335586757</td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button></p></td>
+                            </tr>
+
+
+
+
+
+
+
+
+                        </tbody>
+
+                    </table>
+                    <div class="clearfix"></div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class='span8 main hidden' id="Repair_req_div">
+
+                <table id="mytable2" class="table table-bordred table-striped">
+
+                    <thead>
+
+                    <th> <input type="checkbox" id="checkall" /></th>
+                    <th>Property</th>
+                    <th>Type</th>
+                    <th>Created date</th>
+                    <th>Status</th>
+                    <th>assigned</th>
+                    <th>View</th>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td><input type="checkbox" class="checkthis" /></td>
+                            <td>Name</td>
+                            <td>Rented / lease</td>
+                            <td>8-8-2013</td>
+                            <td>Inprogress</td>
+                            <td>Agent name</td>
+
+                            <td>
+                                <p data-placement="top" data-toggle="tooltip" title="Edit">
+                                    <button type="button" class="btn btn-default btn-sm">
+                                        <span class="glyphicon glyphicon-eye-open"></span>
+                                    </button>
+                                </p>
+                            </td>   
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" class="checkthis" /></td>
+                            <td>Name</td>
+                            <td>Rented / lease</td>
+                            <td>8-8-2013</td>
+                            <td>Inprogress</td>
+                            <td>Agent name</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button type="button" class="btn btn-default btn-sm">
+    <span class="glyphicon glyphicon-eye-open"></span>
+</button></p></td>
+
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+
+                    </tbody>
+
+                </table>
+            </div>
+
+
+
+            <div class='span2 sidebar'>
+                <h3>Recent Links</h3>
+                <ul class="nav nav-tabs nav-stacked">
+                    <li><a href='#'>Another Link 1</a></li>
+                    <li><a href='#'>Another Link 2</a></li>
+                    <li><a href='#'>Another Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.container -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Script to Activate the Carousel -->
+    <script>
+        function Search() {
+            $('#searchMain').removeClass('hidden');
+            $('#DivAgreementForm').addClass('hidden');
+            $('#Repair_req_div').addClass('hidden')
+        }
+
+        function AgreeMent() {
+            $('#searchMain').addClass('hidden');
+            $('#DivAgreementForm').removeClass('hidden');
+            $('#Repair_req_div').addClass('hidden');
+        }
+
+        function Repair() {
+            $('#searchMain').addClass('hidden');
+            $('#DivAgreementForm').addClass('hidden');
+            $('#Repair_req_div').removeClass('hidden')
+        }
+
+        function PayRent() {
+
+        }
+
+
+
+    </script>
+    <style>
+
+        body {
+    padding-top: 50px;
+}
+.dropdown.dropdown-lg .dropdown-menu {
+    margin-top: -1px;
+    padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 500px;
+           margin: 12px auto;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+    }
+}
+    </style>
+</body>
+</html>
